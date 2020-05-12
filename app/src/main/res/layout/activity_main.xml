@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/main_nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/main_mobile_navigation" />
+
+    <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:padding="12dp"
+        app:bnc_mode="spread">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/item_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/trevuMidPink"
+            app:bt_icon="@drawable/ic_icon_home"
+            app:bt_colorInactive="@color/quantum_grey600"
+            app:bt_padding="7dp"
+            app:bt_shape="@drawable/button_pink"
+            app:bt_title="Home"
+            app:bt_titleSize="12sp"
+            app:bt_titlePadding="7dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/item_saved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/trevuMidPink"
+            app:bt_icon="@drawable/ic_icon_saved"
+            app:bt_colorInactive="@color/quantum_grey600"
+            app:bt_padding="7dp"
+            app:bt_shape="@drawable/button_pink"
+            app:bt_title="Saved"
+            app:bt_titleSize="12sp"
+            app:bt_titlePadding="7dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/item_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/trevuMidPink"
+            app:bt_icon="@drawable/ic_icon_friends"
+            app:bt_colorInactive="@color/quantum_grey600"
+            app:bt_padding="7dp"
+            app:bt_shape="@drawable/button_pink"
+            app:bt_title="Friends"
+            app:bt_titleSize="12sp"
+            app:bt_titlePadding="7dp" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/item_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/trevuMidPink"
+            app:bt_icon="@drawable/ic_icon_profile"
+            app:bt_colorInactive="@color/quantum_grey600"
+            app:bt_padding="7dp"
+            app:bt_shape="@drawable/button_pink"
+            app:bt_title="Profile"
+            app:bt_titleSize="12sp"
+            app:bt_titlePadding="7dp" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
+
+</LinearLayout>

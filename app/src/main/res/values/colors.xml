@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="trevuMidPink">#FF7487</color>
+    <color name="trevuGreen">#217C36</color>
+    <color name="trevuYellow">#FFAC00</color>
+    <color name="trevuDarkRed">#A20000</color>
+    <color name="trevuBlue">#0984E3</color>
+    <color name="trevuLightPink">#FF8C94</color>
+    <color name="trevuCream">#FFD8BE</color>
+
+    <color name="nav_unchecked">#747575</color>
+    <color name="nav_background">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+</resources>

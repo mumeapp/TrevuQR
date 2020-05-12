@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_findfriend1">
+
+    <fragment
+        android:id="@+id/nav_findfriend1"
+        android:name="com.remu.ui.findfriends.FindFriend1Fragment"
+        android:label="Find Friend"
+        tools:layout="@layout/fragment_find_friend1" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_findfriend2"
+        android:name="com.remu.ui.findfriends.FindFriend2Fragment"
+        android:label="Complete Profile"
+        tools:layout="@layout/fragment_find_friend2" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_findfriend3"
+        android:name="com.remu.ui.findfriends.FindFriend3Fragment"
+        android:label="Detecting Nearby"
+        tools:layout="@layout/fragment_find_friend3" />
+
+</navigation>

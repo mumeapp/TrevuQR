@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    tools:context=".HalalGiftDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/gift_detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_loading_image"
+            tools:ignore="ContentDescription" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="295dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/gift_detail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="85dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/geomanistbold"
+                    android:text="title"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_distance"
+                        android:tint="@color/black"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/gift_detail_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/geomanistregular"
+                        android:text="distance"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_star_yellow_24dp"
+                        android:tint="@color/black"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/gift_detail_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/geomanistregular"
+                        android:text="rating"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="top"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_map_marker_select_red_48dp"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/gift_detail_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/geomanistmedium"
+                        android:text="address"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="@color/trevuGreen"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/geomanistmedium"
+                            android:text="Give Review"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText" />
+
+                        <RatingBar
+                            android:id="@+id/gift_detail_rating_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:numStars="5"
+                            android:progressTint="@color/white"
+                            android:scaleX="0.75"
+                            android:scaleY="0.75" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="top"
+                                app:cardCornerRadius="25dp"
+                                app:cardElevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/gift_detail_profile_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ic_default_avatar"
+                                    tools:ignore="ContentDescription" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <EditText
+                                android:id="@+id/gift_detail_review_edit_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/geomanistregular"
+                                android:hint="write your thoughts"
+                                android:inputType="textImeMultiLine"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/quantum_grey300"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText"
+                                android:importantForAutofill="no" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/gift_detail_submit_button"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_green"
+                            android:backgroundTint="@color/white"
+                            android:fontFamily="@font/geomanistmedium"
+                            android:text="Submit"
+                            android:textAllCaps="false"
+                            android:textColor="@color/trevuGreen"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/geomanistbold"
+                    android:text="Review"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_gift_detail_review_users"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:nestedScrollingEnabled="false" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/powered_by_google_light"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/toggle_gift_save"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="270dp"
+            android:layout_alignParentEnd="true"
+            app:cardCornerRadius="25dp">
+
+            <ImageView
+                android:id="@+id/img_clicked"
+                android:layout_width="20dp"
+                android:layout_height="17.5dp"
+                android:src="@drawable/ic_save_blank"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

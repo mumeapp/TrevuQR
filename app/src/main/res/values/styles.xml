@@ -1,0 +1,127 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MidPinkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/trevuMidPink</item>
+        <item name="colorPrimaryDark">@color/trevuMidPink</item>
+        <item name="colorAccent">@color/trevuMidPink</item>
+    </style>
+
+    <style name="GreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/trevuGreen</item>
+        <item name="colorPrimaryDark">@color/trevuGreen</item>
+        <item name="colorAccent">@color/trevuGreen</item>
+    </style>
+
+    <style name="YellowTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/trevuYellow</item>
+        <item name="colorPrimaryDark">@color/trevuYellow</item>
+        <item name="colorAccent">@color/trevuYellow</item>
+    </style>
+
+    <style name="DarkRedTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/trevuDarkRed</item>
+        <item name="colorPrimaryDark">@color/trevuDarkRed</item>
+        <item name="colorAccent">@color/trevuDarkRed</item>
+    </style>
+
+    <style name="BlueTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/trevuBlue</item>
+        <item name="colorPrimaryDark">@color/trevuBlue</item>
+        <item name="colorAccent">@color/trevuBlue</item>
+    </style>
+
+    <style name="LightPinkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/trevuLightPink</item>
+        <item name="colorPrimaryDark">@color/trevuLightPink</item>
+        <item name="colorAccent">@color/trevuLightPink</item>
+    </style>
+
+    <style name="OnboardingTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="WhiteTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/trevuMidPink</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="ChangeProfileTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/trevuMidPink</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/trevuMidPink</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="LoginTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/trevuBlue</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="RegisterTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/trevuBlue</item>
+        <item name="colorPrimaryDark">@color/trevuBlue</item>
+        <item name="colorAccent">@color/trevuBlue</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="MosqueTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/trevuGreen</item>
+        <item name="colorPrimaryDark">@color/trevuGreen</item>
+        <item name="colorAccent">@color/trevuGreen</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="GiftDetailTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/trevuGreen</item>
+        <item name="colorPrimaryDark">@color/trevuGreen</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+</resources>

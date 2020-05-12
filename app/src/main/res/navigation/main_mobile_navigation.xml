@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.remu.ui.main.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_saved"
+            app:destination="@id/navigation_saved"
+            app:enterAnim="@anim/animate_slide_left_enter"
+            app:exitAnim="@anim/animate_card_exit"
+            app:popEnterAnim="@anim/animate_slide_left_enter"
+            app:popExitAnim="@anim/animate_slide_left_exit"
+            app:popUpTo="@+id/navigation_saved"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_friends"
+            app:destination="@id/navigation_friends"
+            app:enterAnim="@anim/animate_slide_left_enter"
+            app:exitAnim="@anim/animate_card_exit"
+            app:popEnterAnim="@anim/animate_slide_left_enter"
+            app:popExitAnim="@anim/animate_slide_left_exit"
+            app:popUpTo="@+id/navigation_friends"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:enterAnim="@anim/animate_slide_left_enter"
+            app:exitAnim="@anim/animate_card_exit"
+            app:popEnterAnim="@anim/animate_slide_left_enter"
+            app:popExitAnim="@anim/animate_slide_left_exit"
+            app:popUpTo="@+id/navigation_profile"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_saved"
+        android:name="com.remu.ui.main.SavedFragment"
+        android:label="@string/title_saved"
+        tools:layout="@layout/fragment_saved" >
+        <action
+            android:id="@+id/action_navigation_saved_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/animate_slide_left_enter"
+            app:exitAnim="@anim/animate_card_exit"
+            app:popEnterAnim="@anim/animate_slide_left_enter"
+            app:popExitAnim="@anim/animate_slide_left_exit"
+            app:popUpTo="@+id/navigation_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_saved_to_navigation_friends"
+            app:destination="@id/navigation_friends"
+            app:enterAnim="@anim/animate_slide_left_enter"
+            app:exitAnim="@anim/animate_card_exit"
+            app:popEnterAnim="@anim/animate_slide_left_enter"
+            app:popExitAnim="@anim/animate_slide_left_exit"
+            app:popUpTo="@+id/navigation_friends"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_saved_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:enterAnim="@anim/animate_slide_left_enter"
+            app:exitAnim="@anim/animate_card_exit"
+            app:popEnterAnim="@anim/animate_slide_left_enter"
+            app:popExitAnim="@anim/animate_slide_left_exit"
+            app:popUpTo="@+id/navigation_profile"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_friends"
+        android:name="com.remu.ui.main.FriendFragment"
+        android:label="@string/title_friends"
+        tools:layout="@layout/fragment_friend" >
+        <action
+            android:id="@+id/action_navigation_friends_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/animate_slide_left_enter"
+            app:exitAnim="@anim/animate_card_exit"
+            app:popEnterAnim="@anim/animate_slide_left_enter"
+            app:popExitAnim="@anim/animate_slide_left_exit"
+            app:popUpTo="@+id/navigation_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_friends_to_navigation_saved"
+            app:destination="@id/navigation_saved"
+            app:enterAnim="@anim/animate_slide_left_enter"
+            app:exitAnim="@anim/animate_card_exit"
+            app:popEnterAnim="@anim/animate_slide_left_enter"
+            app:popExitAnim="@anim/animate_slide_left_exit"
+            app:popUpTo="@+id/navigation_saved"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_friends_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:enterAnim="@anim/animate_slide_left_enter"
+            app:exitAnim="@anim/animate_card_exit"
+            app:popEnterAnim="@anim/animate_slide_left_enter"
+            app:popExitAnim="@anim/animate_slide_left_exit"
+            app:popUpTo="@+id/navigation_profile"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.remu.ui.main.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/animate_slide_left_enter"
+            app:exitAnim="@anim/animate_card_exit"
+            app:popEnterAnim="@anim/animate_slide_left_enter"
+            app:popExitAnim="@anim/animate_slide_left_exit"
+            app:popUpTo="@+id/navigation_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_saved"
+            app:destination="@id/navigation_saved"
+            app:enterAnim="@anim/animate_slide_left_enter"
+            app:exitAnim="@anim/animate_card_exit"
+            app:popEnterAnim="@anim/animate_slide_left_enter"
+            app:popExitAnim="@anim/animate_slide_left_exit"
+            app:popUpTo="@+id/navigation_saved"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_friends"
+            app:destination="@id/navigation_friends"
+            app:enterAnim="@anim/animate_slide_left_enter"
+            app:exitAnim="@anim/animate_card_exit"
+            app:popEnterAnim="@anim/animate_slide_left_enter"
+            app:popExitAnim="@anim/animate_slide_left_exit"
+            app:popUpTo="@+id/navigation_friends"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

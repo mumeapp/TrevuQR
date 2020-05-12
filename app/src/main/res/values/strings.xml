@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Trevu</string>
+
+    <string name="API_KEY">API_KEY</string>
+
+    <!-- bottom navigation strings -->
+    <string name="title_home">Home</string>
+    <string name="title_saved">Saved</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_profile">Profile</string>
+</resources>

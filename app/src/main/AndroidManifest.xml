@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.remu">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".QRActivity"></activity>
+        <!-- splash and on board activities -->
+        <activity
+            android:name=".SplashscreenActivity"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OnboardingActivity"
+            android:theme="@style/OnboardingTheme" />
+        <activity android:name=".PermissionActivity" /> <!-- login and register activities -->
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/RegisterTheme"
+            android:windowSoftInputMode="stateHidden" /> <!-- main activities -->
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/WhiteTheme" />
+        <activity android:name=".FoodBeverageTourismResult" /> <!-- mosque activities -->
+        <activity
+            android:name=".MosqueActivity"
+            android:theme="@style/MosqueTheme" /> <!-- food and beverages activities -->
+        <activity
+            android:name=".FoodActivity"
+            android:theme="@style/GreenTheme" /> <!-- halal food activities -->
+        <activity
+            android:name=".HalalFoodActivity"
+            android:theme="@style/YellowTheme"
+            android:windowSoftInputMode="stateHidden" /> <!-- halal beverages activities -->
+        <activity
+            android:name=".HalalBeveragesActivity"
+            android:theme="@style/DarkRedTheme"
+            android:windowSoftInputMode="stateHidden" /> <!-- halal gift activities -->
+        <activity
+            android:name=".HalalGiftDetail"
+            android:theme="@style/GiftDetailTheme"
+            android:windowSoftInputMode="stateHidden" /> <!-- tourism activities -->
+        <activity
+            android:name=".TourismActivity"
+            android:theme="@style/BlueTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PlaceDetail"
+            android:theme="@style/FullScreenTheme" /> <!-- find friends -->
+        <activity
+            android:name=".FindFriendActivity"
+            android:theme="@style/WhiteTheme" />
+        <activity
+            android:name=".FindFriendResultActivity"
+            android:theme="@style/WhiteTheme" /> <!-- dictionary activities -->
+        <activity
+            android:name=".ChooseLanguageActivity"
+            android:theme="@style/WhiteTheme" />
+        <activity
+            android:name=".AddDictionary"
+            android:theme="@style/LightPinkTheme" />
+        <activity
+            android:name=".DictionaryActivity"
+            android:theme="@style/LightPinkTheme" /> <!-- profile -->
+        <activity
+            android:name=".ChangeProfileActivity"
+            android:theme="@style/ChangeProfileTheme" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:theme="@style/WhiteTheme" /> <!-- settings and about -->
+        <activity
+            android:name=".PrivacyPolicyActivity"
+            android:theme="@style/WhiteTheme" />
+        <activity
+            android:name=".HelpCenterActivity"
+            android:theme="@style/WhiteTheme" /> <!-- Qibla activities !! if this app have 2nd chances this will be created for sure -->
+        <activity android:name=".QiblaActivity" /> <!-- service -->
+        <service
+            android:name=".Service.UpdateLocation"
+            tools:ignore="InnerclassSeparator" /> <!-- meta datas -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="PUT_API_KEY_HERE" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+    </application>
+
+</manifest>
